@@ -1,0 +1,282 @@
+/* ─── Reset & Base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; }
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.65;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+a:hover { color: #555; }
+
+/* ─── Layout ───────────────────────────────────────────────── */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* ─── Navigation ───────────────────────────────────────────── */
+header {
+  border-bottom: 1px solid #ddd;
+  padding: 18px 0;
+}
+
+nav {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+}
+
+nav .site-name {
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-weight: normal;
+  margin-right: 32px;
+  white-space: nowrap;
+  color: #111;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
+}
+
+nav ul li a {
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #444;
+  padding: 2px 14px 2px 0;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  display: inline-block;
+}
+
+nav ul li a:hover { color: #111; }
+
+nav ul li a.active {
+  color: #111;
+  border-bottom: 1px solid #111;
+}
+
+/* ─── Main content ─────────────────────────────────────────── */
+main {
+  padding: 48px 0 80px;
+}
+
+/* ─── Home: intro block ────────────────────────────────────── */
+.intro {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  margin-bottom: 52px;
+}
+
+.intro-text { flex: 1; min-width: 0; }
+
+.intro-text h1 {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 6px;
+  letter-spacing: 0.01em;
+}
+
+.intro-text .subtitle {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.intro-text p {
+  font-size: 15px;
+  margin-bottom: 14px;
+  text-align: justify;
+}
+
+.intro-photo {
+  flex-shrink: 0;
+}
+
+.intro-photo img {
+  width: 160px;
+  display: block;
+  border: none;
+}
+
+/* ─── Contact links ────────────────────────────────────────── */
+.contact-links {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.contact-links li {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-links li span {
+  display: inline-block;
+  width: 110px;
+  color: #888;
+}
+
+.contact-links li a {
+  color: #111;
+  border-bottom: 1px solid #ccc;
+}
+.contact-links li a:hover {
+  border-bottom-color: #111;
+  color: #111;
+}
+
+/* ─── Sections ─────────────────────────────────────────────── */
+.section-title {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 18px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+section {
+  margin-bottom: 52px;
+}
+
+/* ─── News / Updates ───────────────────────────────────────── */
+.news-list {
+  list-style: none;
+}
+
+.news-list li {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  align-items: baseline;
+}
+
+.news-list .news-date {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+  color: #999;
+  white-space: nowrap;
+  min-width: 56px;
+}
+
+/* ─── Research page ────────────────────────────────────────── */
+.paper {
+  margin-bottom: 36px;
+}
+
+.paper-title {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+.paper-meta {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.paper-abstract {
+  font-size: 14px;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 8px;
+}
+
+.paper-links {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+}
+
+.paper-links a {
+  border-bottom: 1px solid #ccc;
+  margin-right: 12px;
+  color: #444;
+}
+.paper-links a:hover { color: #111; border-bottom-color: #111; }
+
+.paper-section-label {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin: 32px 0 16px;
+}
+
+/* ─── Teaching ─────────────────────────────────────────────── */
+.course {
+  margin-bottom: 24px;
+}
+
+.course-name {
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.course-meta {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  color: #666;
+}
+
+/* ─── Contact page ─────────────────────────────────────────── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-block h3 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 12px;
+  font-weight: normal;
+}
+
+.contact-block p, .contact-block address {
+  font-size: 15px;
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.contact-block a {
+  border-bottom: 1px solid #ccc;
+}
+.contact-block a:hover { border-bottom-color: #111; }
+
+/* ─── Responsive ───────────────────────────────────────────── */
+@media (max-width: 620px) {
+  .intro { flex-direction: column-reverse; gap: 24px; }
+  .intro-photo img { width: 120px; }
+  .contact-grid { grid-template-columns: 1fr; }
+  nav { flex-direction: column; gap: 8px; }
+  nav .site-name { margin-right: 0; }
+}
